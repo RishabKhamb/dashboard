@@ -1,0 +1,41 @@
+.feedback-container {
+    background-color: #1D202A;
+    padding: 20px;
+    border-radius: 12px;
+    height: 530px;
+    overflow-y: auto;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #2C2D36 #1D202A; /* For Firefox */
+  }
+  
+  .feedback-container::-webkit-scrollbar {
+    width: 8px; /* For Chrome, Safari, and Edge */
+  }
+  
+  .feedback-container::-webkit-scrollbar-track {
+    background: #1D202A;
+  }
+  
+  .feedback-container::-webkit-scrollbar-thumb {
+    background-color: #2C2D36;
+    border-radius: 10px;
+    border: 2px solid #1D202A;
+  }
+  
+  #image-container {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5em;
+  }
+  
+  .feedback-content {
+    max-height: 100%;
+  }
+  
+  .feedback-item {
+    margin-bottom: 20px;
+  }  

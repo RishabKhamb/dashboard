@@ -1,38 +1,155 @@
+/* General styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* side bar styling properties */
+.sidebar {
+  width: 60px !important;
+  position: sticky;
+  top: 0;
+  height: 100vh; 
+  z-index: 1000; 
+  padding: 0; 
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* main content styling properties */
+.main {
+  background-color: #000;
+  flex-grow: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0;
+  margin: 0;
+}
+
+/* main content of components */
+.content {
+  flex-grow: 1;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 1rem;
+}
+
+.form-control.form-control-sm {
+  background-color: #292B2F;
+}
+
+.form-control.form-control-sm::placeholder {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+ul>li>span{
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Navbar styles */
+.navbar {
+  height: 50px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  z-index: 1000;
+}
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-nav {
+  margin-top: 1rem;
+}
+
+.navbar-nav .nav-item {
+  margin: 0.5rem 0;
+}
+.navbar-nav .nav-item .btn {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  padding: 0;
+}
+
+.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-item .btn:hover {
+  background-color: #555;
+}
+
+.navbar-nav .nav-item .btn i {
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  .main {
+    margin-left: 0;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar-collapse {
+    background-color: #343a40;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
+  ul>li>span{
+    display: inline-block;
+    color: white;
+  }
+}
+
+#dashboard-cards {
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#dashboard-card-carousel {
+  display: none; 
+}
+
+@media (max-width: 576px) {
+  #dashboard-cards {
+    display: none;
+  }
+
+  #dashboard-card-carousel {
+    display: block;
+  }
+}
+
+.nav-link {
+  width: 100%;
+  text-align: center;
+}
+.nav-link i {
+  font-size: 24px;
 }

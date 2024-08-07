@@ -1,0 +1,22 @@
+  .nav-link {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav-link i {
+    font-size: 24px;
+  }
+  
+  @media (max-width: 765px) {
+  
+    .navbar-collapse {
+      background-color: #343a40;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    ul>li>span{
+      display: inline-block;
+      color: white;
+    }
+  }

@@ -1,0 +1,63 @@
+.table-container {
+  background: #1D202A;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+  overflow-x: auto; /* Add horizontal scroll*/
+}
+
+.table {
+  border: none;
+  width: 100%;
+}
+
+.table caption {
+  color: #f8f9fa;
+  margin-left: 16px;
+}
+
+.table thead th {
+  background: #1D202A;
+  color: white;
+  border-color: #1D202A;
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
+}
+
+.table tbody td {
+  background: #1D202A;
+  color: white;
+  border-color: #1D202A;
+}
+
+#icon-container {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5em;
+}
+
+.status-badge {
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem; 
+  font-size: 0.875rem;
+  display: inline-block;
+}
+
+@media (max-width: 470px) {
+  #icon-container {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .table-container {
+    padding: 8px;
+  }
+
+  .table caption {
+    margin-left: 8px;
+    font-size: 1rem;
+  }
+}

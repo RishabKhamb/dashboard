@@ -1,0 +1,51 @@
+.card{
+  height: 160px;
+}
+.card-container {
+    background: #1D202A !important;
+    border-radius: 12px;
+  }
+  
+  .card-content {
+    background: #1D202A;
+    border: none;
+    border-radius: 12px;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    color: #ffffff;
+  }
+  
+  .card-amount {
+    color: #ffffff;
+    font-size: 1.2rem;
+  }
+  
+  .card-percentage {
+    color: #0E7D5F;
+    font-size: calc(1rem + 0.5vw);
+  }
+  
+  .circular-progress {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .rounded-off {
+    color: #ffffff;
+    font-size: 70%;
+  }
+
+  p.rounded-off{
+    font-size: calc(0.5rem + 0.2vw);
+  }
+  
+  @media (max-width: 992px) {
+    p.rounded-off{
+      font-size: calc(0.6rem + 0.3vw);
+    }
+  }
